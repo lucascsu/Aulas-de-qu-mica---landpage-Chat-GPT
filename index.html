@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aulas de Química Online | Prof. Lucas Prates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --roxo: #5b2c83;
+      --vinho: #7a1f3d;
+      --cinza-escuro: #1f1f1f;
+      --cinza: #555;
+      --fundo: #f7f7f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--fundo);
+      color: var(--cinza-escuro);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--roxo), var(--vinho));
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: white;
+      color: var(--vinho);
+      padding: 15px 35px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--roxo);
+    }
+
+    .sobre {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .sobre img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .formulario {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .formulario h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background: linear-gradient(135deg, var(--roxo), var(--vinho));
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--cinza);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Aulas de Química Online que Fazem Você Entender de Verdade</h1>
+    <p>Do ensino médio ao nível superior. Metodologia clara, objetiva e focada em resultados reais.</p>
+    <a href="#contato" class="cta">Quero começar agora</a>
+  </header>
+
+  <!-- BENEFÍCIOS -->
+  <section>
+    <div class="grid">
+      <div class="card">
+        <h3>Didática Clara</h3>
+        <p>Explicações passo a passo, sem decoreba, focadas no entendimento químico real.</p>
+      </div>
+      <div class="card">
+        <h3>Foco em Provas</h3>
+        <p>ENEM, vestibulares, concursos e universidade com resolução comentada.</p>
+      </div>
+      <div class="card">
+        <h3>Aulas Online</h3>
+        <p>Conforto, flexibilidade de horários e acompanhamento individual.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre">
+    <div>
+      <h2>Quem será seu professor?</h2>
+      <p>
+        Sou <strong>Lucas Prates</strong>, professor de Química, doutorando em Química Orgânica,
+        com experiência no ensino médio, pré-vestibular e nível superior.
+      </p>
+      <p>
+        Meu objetivo é fazer você parar de decorar fórmulas e começar a entender Química.
+      </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1581091012184-7f6f7f3b7b8d" alt="Laboratório de química">
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section id="contato">
+    <div class="formulario">
+      <h2>Entre em contato</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea rows="4" placeholder="Qual sua dificuldade em Química?"></textarea>
+        <button type="submit">Quero minhas aulas</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 – Aulas de Química com Lucas Prates
+  </footer>
+
+</body>
+</html>
