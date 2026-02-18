@@ -23,6 +23,33 @@
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
+<a 
+  href="https://wa.me/5591999999999?text=Olá!%20Gostaria%20de%20informações%20sobre%20as%20aulas%20de%20Química."
+  class="whatsapp-float"
+  target="_blank"
+>
+  💬
+</a>
+
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+</style>
 
     body {
       background: var(--fundo);
@@ -186,20 +213,28 @@
     <img src="https://images.unsplash.com/photo-1581091012184-7f6f7f3b7b8d" alt="Laboratório de química">
   </section>
 
-  <!-- FORMULÁRIO -->
-  <section id="contato">
-    <div class="formulario">
-      <h2>Entre em contato</h2>
-      <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea rows="4" placeholder="Qual sua dificuldade em Química?"></textarea>
-        <button type="submit">Quero minhas aulas</button>
-      </form>
-    </div>
-  </section>
+<section id="contato">
+  <div class="formulario">
+    <h2>Fale direto comigo no WhatsApp</h2>
+    <p style="text-align:center; margin-bottom:20px;">
+      Clique no botão abaixo e me diga qual é sua dificuldade em Química.
+    </p>
 
-  <footer>
+    <a 
+      href="https://wa.me/5571920005184?text=Olá!%20Tenho%20interesse%20em%20aulas%20de%20Química."
+      class="cta"
+      target="_blank"
+      style="display:block; text-align:center;"
+    >
+      Quero falar com o professor
+    </a>
+  </div>
+</section>
+
+
+
+
+   <footer>
     © 2026 – Aulas de Química com Lucas Prates
   </footer>
 
